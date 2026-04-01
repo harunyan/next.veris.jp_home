@@ -16,7 +16,7 @@ export async function POST(request: Request) {
             received: data
         }, { status: 200 });
 
-    } catch (error) {
+    } catch {
         return NextResponse.json({
             status: 'error',
             message: 'パースに失敗しました'
